@@ -8,9 +8,12 @@ export default {
   component: Button,
 } as ComponentMeta<typeof Button>
 
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args}>dsds</Button>
+const Template: ComponentStory<typeof Button> = (args) => <Button type="submit"  {...args}>dsd1s</Button>
 
-export const Default  = Template.bind({})
+export const Default  = Template.bind({
+  disabled: false,
+  isFullWidth: false
+})
 
 // export const Primary = Template.bind({})
 // Primary.args = {

@@ -1,0 +1,26 @@
+.input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.4rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: black;
+  background-color: transparent;
+  border: 1px solid black;
+  appearance: none;
+  border-radius: 0;
+  transition: all 0.15s ease-in-out;
+
+}
+
+.input:focus {
+  outline: none;
+  border-color: black;
+  box-shadow: 0 0 0 0.2rem rgba(0.75, pink);
+}
+
+
+.input:disabled {
+  background-color: black;
+  opacity: .5;
+}

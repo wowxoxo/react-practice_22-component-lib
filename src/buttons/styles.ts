@@ -36,6 +36,24 @@ export const StyledButton = styled.button<ButtonProps>`
   vertical-align: middle;
   user-select: none;
   border: 1px solid transparent;
+  padding: ${(p) => {
+    if (p.size === 'large') {
+      return '0.5rem 1rem';
+    } else if (p.size === 'small') {
+      return '0.25rem 0.5rem';
+    }
+
+    return '0.4rem 0.75rem';
+  }};
+  font-size: ${(p) => {
+    if (p.size === 'large') {
+      return '1.25rem';
+    } else if (p.size === 'small') {
+      return '0.875rem';
+    }
+
+    return '1rem';
+  }};
 
   &:focus {
     outline: 0;

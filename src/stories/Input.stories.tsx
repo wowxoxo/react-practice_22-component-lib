@@ -1,5 +1,5 @@
 import React from 'react'
-import { ComponentStory, ComponentMeta } from '@storybook/react'
+import { ComponentStory, ComponentMeta, Story } from '@storybook/react'
 import { Field } from '../fields/Field'
 
 export default {
@@ -8,7 +8,7 @@ export default {
   subcomponents: { Field, label: Field.Label }
 } as ComponentMeta<typeof Field>
 
-const Template: ComponentStory<typeof Field> = ({ placeholder }) => {
+const Template: Story = ({ placeholder }) => {
   return (
     <Field>
       <Field.Label>Hello!</Field.Label>
@@ -17,6 +17,6 @@ const Template: ComponentStory<typeof Field> = ({ placeholder }) => {
   )
 }
 
-export const Default  = Template.bind({
-  placeholder: "Placeholder content"
-})
+export const Default  = Template.bind({})
+
+Default.args = {  placeholder: "Placeholder content" }

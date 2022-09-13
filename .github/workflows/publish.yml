@@ -16,7 +16,7 @@ jobs:
           registry-url: 'https://npm.pkg.github.com/'
           scope: '@wowxoxo'
       - run: npm ci
-      - run: npm run lint
+      # - run: npm run lint
       - run: npm run test
       - run: npm run build
       - run: npm publish

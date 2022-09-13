@@ -47,7 +47,7 @@ const shapes = [circle1, square1, rectangle1, square2, circle2, rectangle2]
 
 // shapes.push(triangle1)
 const firstSquare = shapes.find((shape) => shape.type === 'SQUARE')
-console.log(firstSquare?.size)
+// console.log(firstSquare?.size)
 
 try {
   throw new Error('Holy shit!')
@@ -97,7 +97,7 @@ if (isSquare(shape)) {
 
 // not work
 const firstSquare2 = shapes.find(isSquare) || { size: 0 }
-console.log(firstSquare2?.size)
+// console.log(firstSquare2?.size)
 
 // ok
 const firstSquare3 = shapes.find(isSquare1)
@@ -105,7 +105,7 @@ console.log(firstSquare3?.size)
 
 /** FILTER */
 const onlyCircles = shapes.filter((shape) => isCircle1(shape))
-onlyCircles.forEach((circle) => console.log(circle.radius))
+// onlyCircles.forEach((circle) => console.log(circle.radius))
 
 const onlyCircles1 = shapes.filter(isCircle1)
 onlyCircles1.forEach((circle) => console.log(circle.radius))
@@ -113,7 +113,7 @@ onlyCircles1.forEach((circle) => console.log(circle.radius))
 const sizeOneSquare = shapes.find(
   (shape) => isSquare1(shape) && shape.size === 1
 )
-console.log(sizeOneSquare?.size)
+// console.log(sizeOneSquare?.size)
 
 const sizeOneSquare1 = shapes
   .filter(isSquare1)

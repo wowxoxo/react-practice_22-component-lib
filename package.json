@@ -1,9 +1,10 @@
 {
   "name": "@wowxoxo/demo-component-library",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
+  "typings": "dist/typings",
   "sideEffects": false,
   "scripts": {
     "build": "npm run build:js && npm run build:types",
